@@ -1,5 +1,6 @@
 import { MongoClient } from 'mongodb';
-
+import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config()
 const connectionProtocol = process.env.MONGODB_CONNECTION_PROTOCOL;
 const clusterAddress = process.env.MONGODB_CLUSTER_ADDRESS;
 const dbUser = process.env.MONGODB_USERNAME;
